@@ -56,6 +56,18 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 		this.contentRegion.show(contactsView)
 	}
 });
+
+// ** Contact View 
+
+ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
+	template:"#vendor-template",
+	tagName:'li',
+	className:'angry_cat',
+	
+	initialize: function(){
+		console.log("hi")
+	}
+});
 // ** Contacts View
 ContactsMgmt.Views.ContactsView = Backbone.Marionette.CompositeView.extend({
 	template: "#contacts-view",
@@ -64,24 +76,9 @@ ContactsMgmt.Views.ContactsView = Backbone.Marionette.CompositeView.extend({
 
 	itemViewContainer: ".contacts-container",
 
-	initialize: function(){
-		console.log("YO")
-	}
-});
-// ** Contact View 
 
-ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
-	template:"#vendor-template",
-	tagName:'li',
-	className:'angry_cat',
-	events:{
-		'click .rank_up img':'rankUp',
-		'click .rank_down img':'rankDown'
-	},
-	initialize: function(){
-		console.log("hi")
-	}
 });
+
 
 // Marionette Initializer to show content
 // Triggered when the App is started
