@@ -9,24 +9,39 @@
   <script src="./assets/javascript/vendor/underscore.js"></script>
   <script src="./assets/javascript/vendor/backbone.js"></script>
   <script src="./assets/javascript/vendor/backbone.marionette.js"></script>
-  <script src="./assets/javascript/main.js"></script>
+
 
   <link href="./assets/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/custom.css" rel="stylesheet">
   <!--Composite View template-->
-  <script type="text/template" id="angry_cats-template">
+  <script type="text/template" id="vendors-template">
     
   </script>
   <!--Item View template-->
-  <script type="text/template" id="angry_cat-template">
-    <td><%=rank%></td>
-    <td><%= name %></td>
-    <td><img class='angry_cat_pic' src='<%=image_path%>'</td>
+  
+  <script type="text/template" id="contacts-layout">
+    <div >
+      <h1> Contact List </h1>
+      <div class="content-region">
+      </div>
+    </div>
+  </script>
+  <script type="text/template" id="contacts-view">
+    <h2> This is Composite View </h2>
+    <ul class="contacts-container">
+    </ul>
+  </script>
+  <script type="text/template" id="vendor-template">
+    <td><%= name%></td>
+    <td><%= job %></td>
+    <td><img class='angry_cat_pic' src='<%=profile_image%>'</td>
     <td>
       <div class='rank_up'><img src='assets/images/up.gif' ></div>
       <div class='rank_down'><img src='assets/images/down.gif' ></div>
     </td>
   </script>
+
+    <script src="./assets/javascript/main.js"></script>
 </head>
 <body>
   <div id="content">
