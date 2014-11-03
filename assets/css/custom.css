@@ -8,10 +8,14 @@ body {
 }
 
 .contact-item {
-	background: white;
-	border: 1px solid #CACACA;
-	padding: 1em;
+	background: #e2e2e2;
+	padding: 3px;
 	/*margin: 3px;*/
+}
+.inner-content{
+	border: 1px solid #CACACA;
+	background: white;
+	padding: 1em;
 }
 
 .contact-item img {
@@ -37,10 +41,10 @@ body {
 }
 
 .vendor-icon{
-	width: 100px;
-	height: 100px;
+	width: 75px;
+	height: 75px;
 	position: absolute;
-	bottom: -50px;
+	bottom: -36px;
 	left: 25px;
 	border-radius: 100px;
 }
@@ -60,6 +64,26 @@ left: 0;
 width: 100%;
 height: 100%;
 /*background-image: url('https://s3.amazonaws.com/honeybook_cdn/assets_users_production/users/532b267c46ecaccbf1000143/profile_photos/2014-09-17-22-46-03-442.png');
-*/background-position: center;
+*/
+background-position-x: center;
+background-position-y: 0;
 background-size: contain;
 background-repeat: no-repeat;
+}
+
+.info {
+	margin-top: 35px;
+	color: #5A5A5A;
+	min-height: 5em;
+}
+
+.info h5{
+	
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.info span{
+	font-size: 12px;
+}

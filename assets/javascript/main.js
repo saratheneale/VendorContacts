@@ -63,7 +63,7 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
 	template:"#vendor-template",
 	tagName:'div',
-	className:'',
+	className:'contact-item col-md-3',
 	
 	initialize: function(){
 		console.log("hi")
