@@ -19,6 +19,7 @@ ContactsApp.addRegions({
 ContactsMgmt.Models.Contact = Backbone.Model.extend({
 
 });
+
 // Contacts Collection
 ContactsMgmt.Collections.Contacts = Backbone.Collection.extend({
 	model: ContactsMgmt.Models.Contact,
@@ -61,8 +62,8 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 
 ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
 	template:"#vendor-template",
-	tagName:'li',
-	className:'angry_cat',
+	tagName:'div',
+	className:'',
 	
 	initialize: function(){
 		console.log("hi")

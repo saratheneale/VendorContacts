@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>BACKBONE Marionette Tutorial: Collections</title>
+  <title>Vendors</title>
 
   <script src="./assets/javascript/vendor/jquery.js"></script>
   
@@ -20,23 +20,38 @@
   <!--Item View template-->
   
   <script type="text/template" id="contacts-layout">
-    <div >
-      <h1> Contact List </h1>
-      <div class="content-region">
+    <div>
+      <div class="nav header">
+        <h1> Contact List </h1>
+      </div>
+      <div class="content-region container">
       </div>
     </div>
   </script>
   <script type="text/template" id="contacts-view">
-    <h2> This is Composite View </h2>
-    <ul class="contacts-container">
-    </ul>
+    <h2 class="row"> This is Composite View </h2>
+    <div class="contacts-container row">
+    </div>
   </script>
   <script type="text/template" id="vendor-template">
-    <td><%= name%></td>
-    <td><%= job %></td>
-    <td>
-      <img class='profile_pic' src='<%=profile_image%>'
-    </td>
+    <div class="contact-item col-md-3 col-xs-6">
+      <div class="row1">
+        <div class="img-section 1col-md-12">
+          
+          <div class="profile_pic" style="background-image:url('<%= profile_image %>')">
+            
+          </div>
+          <img class='vendor-icon img-responsive' src='<%= icon %>'>
+        </div>
+        <div class='info'>
+          <h5><%= name%></h5>
+          
+          <span class='job'>  <%= job %></span>
+          <span class='company'>  <%= company_name %> </span>
+        </div>
+    
+      </div>
+    </div>
 
   </script>
 
@@ -44,6 +59,7 @@
 </head>
 <body>
   <div id="content">
+
   </div>
 </body>
 </html>
