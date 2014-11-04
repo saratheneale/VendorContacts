@@ -12,7 +12,9 @@ ContactsMgmt = {
 
 // 1. Models - Contact Model
 ContactsMgmt.Models.Contact = Backbone.Model.extend({
-
+	// The server gives us all the info for the model fetch for this app
+	// We could easily parse the data or do other actions the server wants to know
+	// eg- saving, favoriting, editing, etc.
 });
 
 // 2. Collections - Contacts Collection
@@ -64,7 +66,9 @@ ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
 
 	tagName:'div',
 	
-	className:'contact-item col-md-3 col-sm-4 col-xs-6',
+	//className:'contact-item col-md-3 col-sm-4 col-xs-6', 
+	// Its easier to leave out className here and put it in the template
+	// This makes it easier for UI/UX to understand how the templates are styled
 
 });
 
