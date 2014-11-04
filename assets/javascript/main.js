@@ -39,7 +39,8 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 	},
 
 	onRender: function(){
-		// Fetch Collection
+		
+		// Fetch Collection and show the views
 		var collection = new ContactsMgmt.Collections.Contacts()
 		collection.fetch({
 			success: function(collection, response, options){
@@ -72,6 +73,12 @@ ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
 	
 
 });
+
+// Empty View for the Contacts
+ContactsMgmt.Views.EmptyContacts = Backbone.Marionette.ItemView.extend({
+	template: "#empty-contacts-view"
+});
+
 // ** Contacts View
 ContactsMgmt.Views.ContactsView = Backbone.Marionette.CompositeView.extend({
 	template: "#contacts-view",
@@ -79,6 +86,26 @@ ContactsMgmt.Views.ContactsView = Backbone.Marionette.CompositeView.extend({
 	itemView: ContactsMgmt.Views.Contact,
 
 	itemViewContainer: ".contacts-container",
+
+	// For the empty Collection
+	emptyView: ContactsMgmt.Views.EmptyContacts,
+
+	// Distinguish between an empty collection and a loading collection
+	collectionEvents: {
+		'request': 'showLoading',
+    	'sync': 'hideLoading'
+	},
+
+	showLoading: function(){
+		
+		this.$(".loading").show()
+	},
+
+	hideLoading: function(){
+		
+		this.$(".loading").hide()
+
+	}
 
 
 });

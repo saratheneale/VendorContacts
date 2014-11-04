@@ -17,8 +17,16 @@
   <script type="text/template" id="vendors-template">
     
   </script>
-  <!--Item View template-->
-  
+
+<!--Empty Contacts View -->
+  <script type="text/template" id="empty-contacts-view">
+    <div class="row">
+      <p class="loading"> Loading Vendors... </p>
+      <p class="error">
+        Oops! It looks like there is no vendors in  your contact list. 
+      </p>
+    </div>
+  </script>
   <script type="text/template" id="contacts-layout">
     <div>
       <div class="nav header">
@@ -28,10 +36,12 @@
       </div>
     </div>
   </script>
+
   <script type="text/template" id="contacts-view">
     <div class="contacts-container row">
     </div>
   </script>
+
   <script type="text/template" id="vendor-template">
     <div class="inner-content">
       <div class="">
