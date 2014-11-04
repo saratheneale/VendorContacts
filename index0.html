@@ -14,7 +14,7 @@
 
   <link href="./assets/css/reset.css" rel="stylesheet">
   <link href="./assets/css/bootstrap.css" rel="stylesheet">
-  <link href="./assets/css/custom.css" rel="stylesheet">
+  <link href="./assets/css/custom0.css" rel="stylesheet">
   
 
   <!--Empty Contacts View -->
@@ -22,7 +22,7 @@
     <div class="row">
       <p class="loading"> Loading Vendors... </p>
       <p class="error">
-        Oops! It looks like there are no vendors in your contact list. 
+        Oops! It looks like there are no vendors in  your contact list. 
       </p>
     </div>
   </script>
@@ -31,11 +31,7 @@
   <script type="text/template" id="contacts-layout">
     <div>
       <div class="nav header">
-      <ul>
-        <li>
-          <h2 class="container title"> Contact List </h2>
-        </li>
-      </ul>
+        <h1> Contact List </h1>
       </div>
       <div class="content-region container">
       </div>
@@ -50,25 +46,25 @@
 
  <!-- Contact Item View-->
   <script type="text/template" id="vendor-template">
-    <div class="contact-item l-contact-item col-md-3 col-sm-4 col-xs-6">
-    <div class="contact-item__inner-content l-contact-item__inner-content">
+    <div class="contact-item col-md-3 col-sm-4 col-xs-6">
+    <div class="inner-content">
 
-        <div class="l-contact-item__img-section ">
+        <div class="img-section ">
           
-          <div class="l-contact-item__img-section__profile-pic" style="background-image:url('<%= profile_image %>')">
+          <div class="profile-pic" style="background-image:url('<%= profile_image %>')">
 
           </div>
-          <img class='contact-item__img-section__vendor-icon l-contact-item__img-section__vendor-icon full-border img-responsive' src='<%= icon %>'>
+          <img class='vendor-icon img-responsive' src='<%= icon %>'>
         </div>
-        <div class='contact-item__info l-contact-item__info'>
-          <h5 class='contact-item__info-name'><%= name%></h5>
+        <div class='info'>
+          <h5><%= name%></h5>
           
-          <span class='contact-item__job'>  <%= job %></span>
+          <span class='job'>  <%= job %></span>
           <span class='company'>  <%= company_name %> </span>
         </div>
 
-      <div class="hover-content l-hover-content">
-                <div class="hover-content__info">
+      <div class="hover-content">
+                <div class="info">
 
                   <h4><%= name%></h4>
                   
