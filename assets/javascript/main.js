@@ -63,11 +63,14 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 ContactsMgmt.Views.Contact =  Backbone.Marionette.ItemView.extend({
 	template:"#vendor-template",
 	tagName:'div',
-	className:'contact-item col-md-3 col-sm-4 col-lg-2 col-xs-6',
-	
+	className:'contact-item col-md-3 col-sm-4 col-xs-6',
+
 	initialize: function(){
-		console.log("hi")
-	}
+		
+	},
+
+	
+
 });
 // ** Contacts View
 ContactsMgmt.Views.ContactsView = Backbone.Marionette.CompositeView.extend({

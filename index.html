@@ -37,7 +37,9 @@
       <div class="">
         <div class="img-section ">
           
-          <div class="profile_pic" style="background-image:url('<%= profile_image %>')">
+          <div class="profile-pic" style="background-image:url('<%= profile_image %>')">
+
+            
             
           </div>
           <img class='vendor-icon img-responsive' src='<%= icon %>'>
@@ -50,7 +52,29 @@
         </div>
     
       </div>
+
+      <div class="hover-content">
+                <div class="info">
+
+                  <h4><%= name%></h4>
+                  
+                  <span>  <%= job %></span>
+                  
+                  <br>
+                  
+                  <span>  <%= company_name %> </span>
+                  
+                  <br>
+
+                  <%= phone%>
+                  
+                  <br>
+                    <a href="mailto:<%= email%>"><%= email%> </a>
+
+                </div>
+              </div>  
     </div>
+
 
   </script>
 

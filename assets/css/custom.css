@@ -30,13 +30,13 @@ body {
 	position: relative;
 	width: 100%;
 }
-.img-section .profile_pic{
+.img-section .profile-pic{
 	/*position: absolute;
 	top:0;*/
 	width: 100%;
 }
 
-.img-section .profile_pic img{
+.img-section .profile-pic img{
 	width: 100%;
 }
 
@@ -57,18 +57,18 @@ body {
 	height: 250px;
 }
 
-.img-section .profile_pic {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-/*background-image: url('https://s3.amazonaws.com/honeybook_cdn/assets_users_production/users/532b267c46ecaccbf1000143/profile_photos/2014-09-17-22-46-03-442.png');
-*/
-background-position-x: center;
-background-position-y: 0;
-background-size: contain;
-background-repeat: no-repeat;
+.img-section .profile-pic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*background-image: url('https://s3.amazonaws.com/honeybook_cdn/assets_users_production/users/532b267c46ecaccbf1000143/profile_photos/2014-09-17-22-46-03-442.png');
+	*/
+	background-position-x: center;
+	background-position-y: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .info {
@@ -86,4 +86,29 @@ background-repeat: no-repeat;
 
 .info span{
 	font-size: 12px;
+}
+
+.hover-content{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-color: rgba(0,0,0, .75);
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1em;
+
+	transition: opacity .5s ease-in-out;
+   -moz-transition: opacity .5s ease-in-out;
+   -webkit-transition: opacity .5s ease-in-out;
+}
+.hover-content:hover{
+	opacity: 1;
+	}
+
+.hover-content .info{
+	color: white;
+	padding: 0 2em;
 }
