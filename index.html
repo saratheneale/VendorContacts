@@ -5,28 +5,29 @@
   <title>Vendors</title>
 
   <script src="./assets/javascript/vendor/jquery.js"></script>
-  
   <script src="./assets/javascript/vendor/underscore.js"></script>
   <script src="./assets/javascript/vendor/backbone.js"></script>
   <script src="./assets/javascript/vendor/backbone.marionette.js"></script>
 
-<script src="./assets/javascript/main.js"></script>
+  <script src="./assets/javascript/contacts.js"></script>
+  <script src="./assets/javascript/main.js"></script>
+
+  <link href="./assets/css/reset.css" rel="stylesheet">
   <link href="./assets/css/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/custom.css" rel="stylesheet">
-  <!--Composite View template-->
-  <script type="text/template" id="vendors-template">
-    
-  </script>
+  
 
-<!--Empty Contacts View -->
+  <!--Empty Contacts View -->
   <script type="text/template" id="empty-contacts-view">
     <div class="row">
       <p class="loading"> Loading Vendors... </p>
       <p class="error">
-        Oops! It looks like there is no vendors in  your contact list. 
+        Oops! It looks like there are no vendors in  your contact list. 
       </p>
     </div>
   </script>
+  
+  <!-- Contacts Layout -->
   <script type="text/template" id="contacts-layout">
     <div>
       <div class="nav header">
@@ -37,11 +38,13 @@
     </div>
   </script>
 
+ <!-- Contacts Composite View-->
   <script type="text/template" id="contacts-view">
     <div class="contacts-container row">
     </div>
   </script>
 
+ <!-- Contact Item View-->
   <script type="text/template" id="vendor-template">
     <div class="inner-content">
       <div class="">
@@ -82,7 +85,7 @@
                     <a href="mailto:<%= email%>"><%= email%> </a>
 
                 </div>
-              </div>  
+        </div>  
     </div>
 
 
@@ -90,6 +93,8 @@
 
     
 </head>
+
+
 <body>
   <div id="content">
 

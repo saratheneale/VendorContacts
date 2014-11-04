@@ -10,9 +10,8 @@ body {
 .contact-item {
 	background: #e2e2e2;
 	padding: 3px;
-	/*margin: 3px;*/
 }
-.inner-content{
+.contact-item .inner-content{
 	border: 1px solid #CACACA;
 	background: white;
 	padding: 1em;
