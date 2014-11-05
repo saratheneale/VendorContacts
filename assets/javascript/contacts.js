@@ -43,7 +43,7 @@ ContactsMgmt.Views.ContactsLayout = Backbone.Marionette.Layout.extend({
 		var collection = new ContactsMgmt.Collections.Contacts()
 		collection.fetch({
 			success: function(collection, response, options){
-				console.log(response)
+				//console.log(response)
 			},
 			error: function(collection, response, options){
 				console.error(response)
