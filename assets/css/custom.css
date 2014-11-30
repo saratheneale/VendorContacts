@@ -12,126 +12,126 @@
 */
 
 body {
-	background-color: #e2e2e2;
-	color: #5A5A5A;
+  background-color: #e2e2e2;
+  color: #5A5A5A;
 }
 
 .header {
-	background: white;
-	border-bottom: 1px solid #CACACA;
+  background: white;
+  border-bottom: 1px solid #CACACA;
 }
 
 .l-title{
-	padding: 0;
+  padding: 0;
 }
 
 .full-border {
-	border: 1px solid #CACACA;
+  border: 1px solid #CACACA;
 }
 
 .contact-item{
-	background: #e2e2e2;
+  background: #e2e2e2;
 }
 
 .l-contact-item{
-	padding: 3px;
+  padding: 3px;
 }
 
 .contact-item__inner-content{
-	border: 1px solid #CACACA;
-	background: white;
+  border: 1px solid #CACACA;
+  background: white;
 }
 
 .l-contact-item__inner-content{
-	padding: 1em;
+  padding: 1em;
 }
 
 .l-contact-item__img-section{
-	position: relative;
-	width: 100%;
-	height: 250px;
-	margin-bottom: 45px;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 45px;
 }
 
 
 
 .l-contact-item__img-section__profile-pic{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-position-x: center;
-	background-position-y: 0;
-	background-size: cover;
-	background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position-x: center;
+  background-position-y: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*.l-contact-item__img-section__profile-pic img{
-	width: 100%;
+  width: 100%;
 }*/
 
 .contact-item__img-section__vendor-icon{
-	border-radius: 100px;
+  border-radius: 100px;
 }
 
 .l-contact-item__img-section__vendor-icon{
-	width: 75px;
-	height: 75px;
-	position: absolute;
-	bottom: -36px;
-	left: 25px;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  bottom: -36px;
+  left: 25px;
 }
 
 .contact-item__info,
-.contact-item__info span 
+.contact-item__info span
 {
-	color: #5A5A5A;
-	font-size: 12px;
+  color: #5A5A5A;
+  font-size: 12px;
 }
 
 .l-contact-item__info{
-	margin-top: 35px;
-	height: 5em;
+  margin-top: 35px;
+  height: 5em;
 }
 
 .contact-item__info-name{
-	font-size: 14px;
-	font-weight: bold;
-	margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .contact-item__job::after{
-	content: ' | ';
+  content: ' | ';
 }
 
 
 .hover-content{
-	opacity: 0;
-	background-color: black;
-	background-color: rgba(0,0,0, .75);
-	color: white;
+  opacity: 0;
+  background-color: black;
+  background-color: rgba(0,0,0, .75);
+  color: white;
 }
 
 .hover-content:hover{
-	opacity: 1;
+  opacity: 1;
 }
 
 .hover-content__info{
-	color: white;
-	padding: 0 2em;
+  color: white;
+  padding: 0 2em;
 }
 
 .l-hover-content {
-	
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 1em;
 
-	transition: opacity .5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1em;
+
+  transition: opacity .5s ease-in-out;
    -moz-transition: opacity .5s ease-in-out;
    -webkit-transition: opacity .5s ease-in-out;
 }
