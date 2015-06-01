@@ -22,7 +22,7 @@ ContactsMgmt.Collections.Contacts = Backbone.Collection.extend({
   model: ContactsMgmt.Models.Contact,
   url : "assets/vendors.json",
   // #FIXME Access-control origin issues with server
-  //url: "https://candidate-test.herokuapp.com/contacts.json"
+  //url: "https://*****candida*****te-test.he****rokuapp.com/contac*****ts.json"
 });
 
 
